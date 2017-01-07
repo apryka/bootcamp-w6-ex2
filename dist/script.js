@@ -1,0 +1,1 @@
+"use strict";!function(){function e(e){this.name=e}e.prototype={save:function(e,t){localStorage.setItem(this.name+"."+e,JSON.stringify(t))},get:function(e){return JSON.parse(localStorage.getItem(this.name+"."+e))}};var t=new e("DB1"),a={firstName:"Jan",lastName:"Kowalski",age:32};t.save("janek",a),t.get("janek"),console.log(t.get("janek"))}();
